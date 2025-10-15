@@ -1,0 +1,8 @@
+{
+  "name":"stuffing-list-checker",
+  "version":"1.0.0",
+  "scripts": { "start": "vercel dev" },
+  "dependencies": {
+    "google-spreadsheet": "^4.0.13"
+  }
+}
