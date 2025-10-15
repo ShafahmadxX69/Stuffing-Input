@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stuffing List Data</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="page">
+    <h1 class="title">Stuffing List Data</h1>
+
+    <div id="uploader" class="uploader">
+      <div id="dropzone" class="dropzone">
+        <div class="icon">📄</div>
+        <button id="selectBtn" class="select-btn">Select Excel file</button>
+        <p class="hint">or drop 1 or more .xlsx files here</p>
+        <input id="fileInput" type="file" accept=".xlsx,.xls" multiple hidden />
+      </div>
+    </div>
+
+    <section id="summary" class="summary" aria-live="polite"></section>
+
+    <div id="results" class="results"></div>
+  </main>
+
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
